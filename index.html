@@ -54,12 +54,39 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">hi</span>
-          </nav>
         </div>
       </header>
       <main class="mdl-layout__content">
         <div id="col-1">
-          <p></p>
+          <h2>What kind of triangle is it?</h2>
+          <h5>enter the length of each side:</h5>
+          <!-- Numeric Textfield with Floating Label -->
+          <form action="#">
+            length a:
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <label class="mdl-textfield__label" for="sample4">length a...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <!-- Numeric Textfield with Floating Label -->
+          <form action="#">
+            length b:
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <label class="mdl-textfield__label" for="sample4">length b...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <!-- Numeric Textfield with Floating Label -->
+          <form action="#">
+            length c:
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <label class="mdl-textfield__label" for="sample4">length c...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             onclick="myButtonClicked()"
