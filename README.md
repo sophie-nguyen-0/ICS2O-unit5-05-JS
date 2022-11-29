@@ -1,4 +1,4 @@
-# ICS2O-unti5-05-JS
+# ICS2O-unit5-05-JS
 
 [![Mr Coxall's Super Linter](https://github.com/sophie-nguyen-0/ICS2O-template/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/sophie-nguyen-0/ICS2O-template/actions/)
 
