@@ -17,5 +17,17 @@ if (navigator.serviceWorker) {
  * this function
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const lengthA = parseFloat(document.getElementById('length-a').value)
+  const lengthB = parseFloat(document.getElementById('length-b').value)
+  const lengthC = parseFloat(document.getElementById('length-c').value)
+
+  const angleA = Math.acos((lengthB**2 + lengthC**2 - lengthA**2) / (2 * lengthB * lengthC)) * (180/Math.PI)
+  const angleB = Math.acos((lengthC**2 + lengthA**2 - lengthB**2) / (2 * lengthC * lengthA)) * (180/Math.PI)
+  const angleC = Math.acos((lengthA**2 + lengthB**2 - lengthC**2) / (2 * lengthA * lengthB)) * (180/Math.PI)
+
+  const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
+
+  if (sumOfAngles == 180){
+    
+  }
 }
