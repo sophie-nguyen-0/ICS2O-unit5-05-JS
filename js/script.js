@@ -43,5 +43,17 @@ function myButtonClicked() {
     Number(angleC.toFixed(2))
 
   if (sumOfAngles == 180) {
+    if ((lengthA == lengthB)&& (lengthB == lengthC)&&(lengthA == lengthC)){
+      document.getElementById('answers').innerHTML = "It's an equilateral triangle!"
+    }
+    else if ((lengthA == lengthB)||(lengthB == lengthC)||(lengthA == lengthC)){
+      document.getElementById('answers').innerHTML = "It's an isosceles triangle!"
+    }
+    else{
+      document.getElementById('answers').innerHTML = "It's a scalene triangle!"
+    }
+  }
+  else {
+    document.getElementById('answers').innerHTML = "It's not a triangle!"
   }
 }
